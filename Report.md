@@ -48,11 +48,11 @@ actor_lr:        0.0010
 actor_lr_decay:  0.9990
 critic_lr:       0.0010
 critic_lr_decay: 0.9990
-update_every:         2
+update_every:         1
 ================================================================================
 ```
 
-This model was able to solve the environment in 324 episodes, as you can see in the training progress chart below:
+This model was able to solve the environment in 391 episodes, as you can see in the training progress chart below:
 
 ![Training Progress](training-progress.png)
 
