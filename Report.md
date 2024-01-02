@@ -18,11 +18,11 @@ I also explored a variety of network architectures and hyperparameters. I starte
 Actor Architecture:
 Network(
   (network): Sequential(
-    (fc1): Linear(in_features=33, out_features=256, bias=True)
+    (fc1): Linear(in_features=33, out_features=128, bias=True)
     (relu1): ReLU()
-    (fc2): Linear(in_features=256, out_features=256, bias=True)
+    (fc2): Linear(in_features=128, out_features=128, bias=True)
     (relu2): ReLU()
-    (fc3): Linear(in_features=256, out_features=4, bias=True)
+    (fc3): Linear(in_features=128, out_features=4, bias=True)
     (out_activation): Tanh()
   )
 )
@@ -30,11 +30,11 @@ Network(
 Critic Architecture:
 Network(
   (network): Sequential(
-    (fc1): Linear(in_features=37, out_features=256, bias=True)
+    (fc1): Linear(in_features=37, out_features=128, bias=True)
     (relu1): ReLU()
-    (fc2): Linear(in_features=256, out_features=256, bias=True)
+    (fc2): Linear(in_features=128, out_features=128, bias=True)
     (relu2): ReLU()
-    (fc3): Linear(in_features=256, out_features=1, bias=True)
+    (fc3): Linear(in_features=128, out_features=1, bias=True)
     (out_activation): Sigmoid()
   )
 )
@@ -48,11 +48,11 @@ actor_lr:        0.0010
 actor_lr_decay:  0.9990
 critic_lr:       0.0010
 critic_lr_decay: 0.9990
-update_every:         4
+update_every:         2
 ================================================================================
 ```
 
-This model was able to solve the environment in 654 episodes, as you can see in the training progress chart below:
+This model was able to solve the environment in 324 episodes, as you can see in the training progress chart below:
 
 ![Training Progress](training-progress.png)
 
