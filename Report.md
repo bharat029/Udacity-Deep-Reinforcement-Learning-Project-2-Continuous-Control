@@ -41,18 +41,18 @@ Network(
 ================================================================================
 Hyperparameters:
 buffer_size:     100000
-batch_size:         128
+batch_size:         256
 gamma:           0.9900
 tau:             0.1000
 actor_lr:        0.0010
 actor_lr_decay:  0.9990
 critic_lr:       0.0010
 critic_lr_decay: 0.9990
-update_every:         1
+update_every:         2
 ================================================================================
 ```
 
-This model was able to solve the environment in 391 episodes, as you can see in the training progress chart below:
+This model was able to solve the environment in 339 episodes, as you can see in the training progress chart below:
 
 ![Training Progress](training-progress.png)
 
