@@ -52,7 +52,7 @@ update_every:         2
 ================================================================================
 ```
 
-This model was able to solve the environment in 339 episodes, as you can see in the training progress chart below:
+Using the 20 agents version of the environment this model was able to solve the environment in about 15 episodes, as you can see in the training progress chart below:
 
 ![Training Progress](training-progress.png)
 
